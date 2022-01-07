@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHE Website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <link rel="stylesheet" href="vendors/iconly/bold.css" />
+
+    <link rel="stylesheet" href="vendors/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+          <div class="sidebar-header">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a href="index.html"><img src="img/logoshe.png" alt="Logo" srcset="" /></a>
+              </div>
+              <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul class="menu">
+              <li class="sidebar-title">Menu</li>
+
+              <li class="sidebar-item active">
+                <a href="index.html" class="sidebar-link">
+                  <i class="bi bi-grid-fill"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-stack"></i>
+                  <span>Components</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="dashboardsquba.html">Form Squba</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="dashboardpatroli.html">Form Patroli K3L</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="dashnoardorangetag.html">Form Orange Tag </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item">
+                <a href="laporan.html" class="sidebar-link">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                  <span>Laporan</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-stack"></i>
+                  <span>Form Improvement</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="oplshe.html">OPL SHE</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="opli2c.html">OPL i2C</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">A3 SHE</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">A3 i2C</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-title">User Settings</li>
+
+              <li class="sidebar-item">
+                <a href="profile.html" class="sidebar-link">
+                  <i class="bi bi-person-badge-fill"></i>
+                  <span>Profile Settings</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>Authentication</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="index.html">Logout</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="profile.html">Ganti Password</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="profile.html">Lupa Password</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+      </div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <h3>One Point Lesson</h3>
+        </div>
+        <div class="page-content">
+          <section class="row">
+                    
+                      
+
+              <!-- test ---------------------------------------------------------------------->
+              <!-- // Basic multiple Column Form section start -->
+              <div class="col-12">
+                <div class="card">
+                        
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form form-horizontal">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>No OPL</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="No/Dept/yy">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Tanggal Pembuatan</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="date" class="form-control"
+                                                        placeholder="..." id="first-name-icon">
+                                                    <div class="form-control-icon">
+                                                       <i></i> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Tema</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="..." id="first-name-icon">
+                                                    <div class="form-control-icon">
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Dibuat Oleh</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Diperiksa Oleh</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            
+                                                <div class="mb-3"> 
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Disetujui Oleh</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            
+                                                <div class="mb-3">  
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            
+                                        </div>
+
+                                        
+
+                                        <div class="col-md-4">
+                                            <label>Jenis OPL (Pilih Salah Satu)</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <li class="d-inline-block me-2 mb-1">
+                                                <div class="form-check">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                            class="form-check-input form-check-primary" 
+                                                            name="customCheck" id="customColorCheck1">
+                                                        <label class="form-check-label"
+                                                            for="customColorCheck1">Pengetahuan Dasar</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-block me-2 mb-1">
+                                                <div class="form-check">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                            class="form-check-input form-check-primary" 
+                                                            name="customCheck" id="customColorCheck1">
+                                                        <label class="form-check-label"
+                                                            for="customColorCheck1">Improvement</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-inline-block me-2 mb-1">
+                                                <div class="form-check">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox"
+                                                            class="form-check-input form-check-primary" 
+                                                            name="customCheck" id="customColorCheck1">
+                                                        <label class="form-check-label"
+                                                            for="customColorCheck1">Trouble Shooting</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </div>
+
+                                        <section class="section">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="form-group mb-3">
+                                                                <h5>Before</h5>
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                    rows="3"></textarea>
+                                                                    <div class="mb-3">  
+                                                                        <input class="form-control" type="file" id="formFile">
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="section">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <div class="form-group mb-3">
+                                                                <h5>After</h5>
+                                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                    rows="3"></textarea>
+                                                                    <div class="mb-3">  
+                                                                        <input class="form-control" type="file" id="formFile">
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        
+                                        
+
+
+                                        
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <button type="submit"
+                                                class="btn btn-primary me-1 mb-1">Save</button>
+                                            <button type="reset"
+                                                class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- // Basic multiple Column Form section end -->
+              <!-- test ----------------------------------------------------------------------------->
+            </div>
+            
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Hasil</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form form-horizontal">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div>
+                                        <div class="col-md-4">
+                                            <h6>Q</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>C</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="number" id="text" class="form-control"
+                                                name="number" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="number" id="text" class="form-control"
+                                                name="number" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>D</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>S</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>M</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>P</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4">
+                                            <h6>E</h6>
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="Before">
+                                        </div>
+                                        <div class="col-md-8 form-group">
+                                            <input type="text" id="text" class="form-control"
+                                                name="text" placeholder="After">
+                                        </div>
+                                    </div>
+                                        
+                                        
+                                        <div class="col-sm-12 d-flex justify-content-end">
+                                            <button type="submit"
+                                                class="btn btn-primary me-1 mb-1">Submit</button>
+                                            <button type="reset"
+                                                class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Sosialisasi</h4>
+                    </div>
+                        
+                    <div class="card-content">
+                        <div class="card-body">
+                            <form class="form form-horizontal">
+                                
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Tanggal Trainee</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="date" class="form-control"
+                                                        placeholder="...">
+                                                    <i></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Nama Trainee</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="..." id="first-name-icon">
+                                                    <div class="form-control-icon">
+                                                       <i></i> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Nama Trainer</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group has-icon-left">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="..." id="first-name-icon">
+                                                    <div class="form-control-icon">
+                                                        <i></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label>Foto Sosialisasi</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            
+                                                <div class="mb-3">
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            
+                                        </div>
+
+
+
+                                        
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <button type="submit"
+                                                class="btn btn-primary me-1 mb-1">Submit</button>
+                                            <button type="reset"
+                                                class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+          <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+              <p>2022 &copy; SHE Website</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="dashboardjs/bootstrap.bundle.min.js"></script>
+
+    <script src="vendors/apexcharts/apexcharts.js"></script>
+    <script src="dashboardjs/pages/dashboard.js"></script>
+
+    <script src="dashboardjs/main.js"></script>
+  </body>
+</html>
+

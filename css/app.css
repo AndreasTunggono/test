@@ -514,7 +514,7 @@
   border: 1px solid #ced4da;
 }
 .form-check .form-check-input.form-check-primary.form-check-glow {
-  box-shadow: 0 0 5px #697ecb;
+  box-shadow: 0 0 5px #00d450;
 }
 .form-check .form-check-input.form-check-primary.form-check-glow:not(:checked) {
   box-shadow: none;

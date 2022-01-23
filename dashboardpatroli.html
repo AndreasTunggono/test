@@ -6,7 +6,6 @@
     <title>SHE Website</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
     <link rel="stylesheet" href="vendors/iconly/bold.css" />
@@ -146,49 +145,55 @@
                       </div>
                       <div class="card-content">
                         <div class="card-body">
-                          <form class="form">
+                          <form action="email.php" method="post" name="myemailform" class="form">
                             <div class="row">
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="first-name-column">Nama Personil/Department</label>
-                                  <input type="name" id="name" class="form-control" placeholder="Jawaban Anda" name="fname-column" />
+                                  <label for="name">Nama Personil/Department</label>
+                                  <input type="name" id="message" class="form-control" placeholder="Jawaban Anda" name="fname-column" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="last-name-column">Tanggal Patroli</label>
-                                  <input type="date" id="last-name-column" class="form-control" placeholder="Tanggal Sekarang" name="lname-column" />
+                                  <label for="email">Email</label>
+                                  <input type="email" id="message" class="form-control" placeholder="Jawaban Anda" name="email" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="city-column">Department yang di Patroli</label>
-                                  <input type="text" id="city-column" class="form-control" placeholder="Jawaban Anda" name="city-column" />
+                                  <label for="message">Tanggal Patroli</label>
+                                  <input type="date" id="message" class="form-control" placeholder="Tanggal Sekarang" name="lname-column" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="country-floating">Deskripsi / Detail Temuan</label>
-                                  <input type="text" id="country-floating" class="form-control" name="country-floating" placeholder="Jawaban Anda" />
+                                  <label for="message">Department yang di Patroli</label>
+                                  <input type="text" id="message" class="form-control" placeholder="Jawaban Anda" name="city-column" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="company-column">Detail Area</label>
-                                  <input type="text" id="company-column" class="form-control" name="company-column" placeholder="Jawaban Anda" />
+                                  <label for="message">Deskripsi / Detail Temuan</label>
+                                  <input type="text" id="message" class="form-control" name="country-floating" placeholder="Jawaban Anda" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
-                                  <label for="company-column" class="form-label">Visual Temuan</label>
-                                  <input class="form-control" type="file" id="formFileMultiple" multiple />
+                                  <label for="message">Detail Area</label>
+                                  <input type="text" id="message" class="form-control" name="company-column" placeholder="Jawaban Anda" />
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-12">
+                                <div class="form-group">
+                                  <label for="message" class="form-label">Visual Temuan</label>
+                                  <input class="form-control" type="file" id="theFile" multiple />
                                 </div>
                               </div>
                               <div class="col-md-6 mb-4">
                                 <h6>Kategori Temuan</h6>
                                 <div class="input-group mb-3">
                                   <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                  <select class="form-select" id="inputGroupSelect01">
+                                  <select class="form-select" id="theText">
                                     <option selected>Harap diisi...</option>
                                     <option value="1">Unsafe Action</option>
                                     <option value="2">Unsafe Condition</option>
@@ -217,6 +222,7 @@
                 </div>
               </section>
               <!-- // Basic multiple Column Form section end -->
+
               <!-- test ----------------------------------------------------------------------------->
             </div>
             <div class="col-12 col-lg-3">

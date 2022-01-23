@@ -19,7 +19,7 @@ require 'PHPmailer/class.phpmailer.php';
 
 $usermail= $_POST['usermail'];
 $mail = new PHPMailer();
-$mail->IsMail(true); // SMTP
+$mail->IsSMTP(true); // SMTP
 $mail->SMTPAuth = true; // SMTP authentication
 $mail->Host= "682018028@gmail.com";
 $mail->SMTPSecure = 'tls';

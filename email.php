@@ -1,14 +1,20 @@
 <?php
 
-$nama= $_POST['nama'];
-$hp= $_POST['hp'];
-$alamat= $_POST['alamat'];
-$usermail= $_POST['usermail'];
+$name= $_POST['Nama'];
+$email= $_POST['Email'];
+$tanggal= $_POST['Tanggal'];
+$namedept= $_POST['Nama department'];
+$desc= $_POST['Deskripsi Temuan'];
+$detail= $_POST['Detail Temuan'];
+$category= $_POST['Kategori Temuan'];
 $body= "
-Nama : $nama <br/>
-HP : $hp <br/>
-Alamat: $alamat <br/>
-Email: $usermail <br/>
+Nama : $name <br/>
+Email : $email <br/>
+Tanggal: $taggal <br/>
+Nama Department: $namedept <br/>
+Deskripsi Temuan: $desc <br/>
+Detail Teuan: $detail <br/>
+Kategori Temuan: $category <br/>
 ";
 
 function Send_Mail($to,$subject,$body)

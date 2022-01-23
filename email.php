@@ -21,11 +21,11 @@ $usermail= $_POST['usermail'];
 $mail = new PHPMailer();
 $mail->IsSMTP(true); // SMTP
 $mail->SMTPAuth = true; // SMTP authentication
-$mail->Host= "682018028@gmail.com";
+$mail->Host= "682018028@student.uksw.edu";
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
-$mail->SetFrom("682018028@gmail.com","email sender");
-$mail->Username = "682018028@gmail.com"; // username gmail yang akan digunakan untuk mengirim email
+$mail->SetFrom("682018028@student.uksw.edu","email sender");
+$mail->Username = "682018028@student.uksw.edu"; // username gmail yang akan digunakan untuk mengirim email
 $mail->Password = "AndreasT1ST"; // Password email
 $mail->SetFrom($usermail, 'user');
 $mail->AddReplyTo($usermail,'user');

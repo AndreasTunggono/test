@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
     <link rel="stylesheet" href="vendors/iconly/bold.css" />
+    <link rel="stylesheet" href="vendors/simple-datatables/style.css" />
 
     <link rel="stylesheet" href="vendors/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css" />
@@ -27,7 +28,7 @@
           <div class="sidebar-header">
             <div class="d-flex justify-content-between">
               <div class="logo">
-                <a href="index.html"><img src="img/logoshe.png" alt="Logo" srcset="" /></a>
+                <a href="index.html"></a>
               </div>
               <div class="toggler">
                 <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -39,64 +40,9 @@
               <li class="sidebar-title">Menu</li>
 
               <li class="sidebar-item active">
-                <a href="index.html" class="sidebar-link">
+                <a href="#" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
                   <span>Dashboard</span>
-                </a>
-              </li>
-
-              <li class="sidebar-item has-sub">
-                <a href="#" class="sidebar-link">
-                  <i class="bi bi-stack"></i>
-                  <span>Components</span>
-                </a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="dashboardsquba.html">Form Squba</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="dashboardpatroli.html">Form Patroli K3L</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="dashnoardorangetag.html">Form Orange Tag </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="sidebar-item">
-                <a href="laporan.html" class="sidebar-link">
-                  <i class="bi bi-file-earmark-medical-fill"></i>
-                  <span>Laporan</span>
-                </a>
-              </li>
-
-              <li class="sidebar-item has-sub">
-                <a href="#" class="sidebar-link">
-                  <i class="bi bi-stack"></i>
-                  <span>Form Improvement</span>
-                </a>
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a href="oplshe.html">OPL SHE</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="opli2c.html">OPL i2C</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="a3she.html">A3 SHE</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">A3 i2C</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="sidebar-title">User Settings</li>
-
-              <li class="sidebar-item">
-                <a href="profile.html" class="sidebar-link">
-                  <i class="bi bi-person-badge-fill"></i>
-                  <span>Profile Settings</span>
                 </a>
               </li>
 
@@ -107,13 +53,7 @@
                 </a>
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="index.html">Logout</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="profile.html">Ganti Password</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="profile.html">Lupa Password</a>
+                    <a href="adminlgn.html">Logout</a>
                   </li>
                 </ul>
               </li>
@@ -130,7 +70,67 @@
         </header>
 
         <div class="page-heading">
-          <h3>A3 Report Improvement</h3>
+          <h3>Dashboard</h3>
+        </div>
+
+        <div class="page-heading">
+          <section class="section">
+            <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body">
+                <table class="table table-striped" id="table1">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Tanggal</th>
+                      <th>Visual Temuan</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bot</td>
+                      <td>vehicula.aliquet@semconsequat.co.uk</td>
+                      <td>12-01-2022</td>
+                      <td>...</td>
+
+                      <td>
+                        <span class="badge bg-success">Open</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Test</td>
+                      <td>fringilla.euismod.enim@quam.ca</td>
+                      <td>01-01-2022</td>
+                      <td>...</td>
+                      <td>
+                        <span class="badge bg-success">Open</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Bot122</td>
+                      <td>mi.Duis@diam.edu</td>
+                      <td>09-02-2022</td>
+                      <td>...</td>
+                      <td>
+                        <span class="badge bg-danger">Closed</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Test111</td>
+                      <td>velit@nec.com</td>
+                      <td>11-01-2022</td>
+                      <td>...</td>
+                      <td>
+                        <span class="badge bg-success">Open</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         </div>
 
         <footer>
@@ -144,6 +144,7 @@
     </div>
     <script src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="dashboardjs/bootstrap.bundle.min.js"></script>
+    <script src="vendors/simple-datatables/simple-datatables.js"></script>
 
     <script src="vendors/apexcharts/apexcharts.js"></script>
     <script src="dashboardjs/pages/dashboard.js"></script>

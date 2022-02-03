@@ -17,8 +17,6 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
     </style>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="email.js"></script>
   </head>
 
   <body>
@@ -83,22 +81,7 @@
                   <li class="submenu-item">
                     <a href="opli2c.html">OPL i2C</a>
                   </li>
-                  <li class="submenu-item">
-                    <a href="a3she.html">A3 SHE</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">A3 i2C</a>
-                  </li>
                 </ul>
-              </li>
-
-              <li class="sidebar-title">User Settings</li>
-
-              <li class="sidebar-item">
-                <a href="profile.html" class="sidebar-link">
-                  <i class="bi bi-person-badge-fill"></i>
-                  <span>Profile Settings</span>
-                </a>
               </li>
 
               <li class="sidebar-item has-sub">
@@ -108,13 +91,7 @@
                 </a>
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a href="index.html">Logout</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="profile.html">Ganti Password</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="profile.html">Lupa Password</a>
+                    <a href="testlogin.html">Logout</a>
                   </li>
                 </ul>
               </li>
@@ -143,7 +120,7 @@
                   <div class="col-12">
                     <div class="card">
                       <div class="card-header">
-                        <h4 class="card-title">Patroli K3L</h4>
+                        <h4 class="card-title">Patroli GMSP</h4>
                       </div>
                       <div class="card-content">
                         <div class="card-body">
@@ -152,50 +129,50 @@
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="name">Nama Personil/Department</label>
-                                  <input type="name" id="message" class="form-control" placeholder="Jawaban Anda" name="name" />
+                                  <input type="name" class="form-control" placeholder="Jawaban Anda" name="name" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="email">Email</label>
-                                  <input type="email" id="message" class="form-control" placeholder="Jawaban Anda" name="email" />
+                                  <input type="email" class="form-control" placeholder="Jawaban Anda" name="email" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="message">Tanggal Patroli</label>
-                                  <input type="date" id="message" class="form-control" placeholder="Tanggal Sekarang" name="tanggal" />
+                                  <input type="date" class="form-control" placeholder="Tanggal Sekarang" name="tanggal" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="message">Department yang di Patroli</label>
-                                  <input type="text" id="message" class="form-control" placeholder="Jawaban Anda" name="namedept" />
+                                  <input type="text" class="form-control" placeholder="Jawaban Anda" name="namedept" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="message">Deskripsi / Detail Temuan</label>
-                                  <input type="text" id="message" class="form-control" name="desc" placeholder="Jawaban Anda" />
+                                  <input type="text" class="form-control" name="desc" placeholder="Jawaban Anda" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="message">Detail Area</label>
-                                  <input type="text" id="message" class="form-control" name="detail" placeholder="Jawaban Anda" />
+                                  <input type="text" class="form-control" name="detail" placeholder="Jawaban Anda" />
                                 </div>
                               </div>
                               <div class="col-md-6 col-12">
                                 <div class="form-group">
                                   <label for="message" class="form-label">Visual Temuan</label>
-                                  <input class="form-control" type="file" id="theFile" multiple />
+                                  <input class="form-control" type="file" multiple />
                                 </div>
                               </div>
                               <div class="col-md-6 mb-4">
                                 <h6>Kategori Temuan</h6>
                                 <div class="input-group mb-3">
                                   <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                                  <select class="form-select" name="category" id="theText">
+                                  <select class="form-select" name="category">
                                     <option selected>Harap diisi...</option>
                                     <option value="1">Unsafe Action</option>
                                     <option value="2">Unsafe Condition</option>
@@ -207,7 +184,7 @@
                                 <div class="form-check">
                                   <div class="checkbox">
                                     <input type="checkbox" id="checkbox5" class="form-check-input" />
-                                    <label for="checkbox5">Saya sudah mengisi dengan benar</label>
+                                    <label for="checkbox">Saya sudah mengisi dengan benar</label>
                                   </div>
                                 </div>
                               </div>

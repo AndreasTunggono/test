@@ -10,7 +10,7 @@ body {
   background: url(../../images/bg/4853433.jpg), linear-gradient(90deg, #2d499d, #3f5491);
 }
 #auth #auth-left {
-  padding: 5rem 8rem;
+  padding: 5rem 7rem;
 }
 #auth #auth-left .auth-title {
   font-size: 4rem;
@@ -22,10 +22,10 @@ body {
   color: #a8aebb;
 }
 #auth #auth-left .auth-logo {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 #auth #auth-left .auth-logo img {
-  height: 2rem;
+  height: 10rem;
 }
 @media screen and (max-width: 767px) {
   #auth #auth-left {
@@ -35,4 +35,20 @@ body {
 #particles-js {
   position: absolute;
   width: 100%;
+}
+
+.input {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #797979;
+  font-size: 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+
+.span {
+  display: block;
+  margin-left: 20px;
+  color: red;
+  font-style: italic;
 }

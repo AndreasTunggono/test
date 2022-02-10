@@ -39,11 +39,29 @@
             <ul class="menu">
               <li class="sidebar-title">Menu</li>
 
-              <li class="sidebar-item active">
-                <a href="#" class="sidebar-link">
+              <li class="sidebar-item">
+                <a href="dashboardadmin.html" class="sidebar-link">
                   <i class="bi bi-grid-fill"></i>
                   <span>Dashboard</span>
                 </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                  <span>Report</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="reportot.html">Orange tag</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="reportpatroli.html">Patroli</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Squba</a>
+                  </li>
+                </ul>
               </li>
 
               <li class="sidebar-item has-sub">
@@ -73,65 +91,112 @@
           <h3>Dashboard</h3>
         </div>
 
-        <div class="page-heading">
-          <section class="section">
-            <div class="card">
-              <div class="card-header"></div>
-              <div class="card-body">
-                <table class="table table-striped" id="table1">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Tanggal</th>
-                      <th>Visual Temuan</th>
-                      <th>Status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Bot</td>
-                      <td>vehicula.aliquet@semconsequat.co.uk</td>
-                      <td>12-01-2022</td>
-                      <td>...</td>
-
-                      <td>
-                        <span class="badge bg-success">Open</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Test</td>
-                      <td>fringilla.euismod.enim@quam.ca</td>
-                      <td>01-01-2022</td>
-                      <td>...</td>
-                      <td>
-                        <span class="badge bg-success">Open</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Bot122</td>
-                      <td>mi.Duis@diam.edu</td>
-                      <td>09-02-2022</td>
-                      <td>...</td>
-                      <td>
-                        <span class="badge bg-danger">Closed</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Test111</td>
-                      <td>velit@nec.com</td>
-                      <td>11-01-2022</td>
-                      <td>...</td>
-                      <td>
-                        <span class="badge bg-success">Open</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+        <section class="section">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Total status follow up temuan</h4>
+                </div>
+                <div class="card-body">
+                  <div id="radialGradient"></div>
+                </div>
               </div>
             </div>
-          </section>
-        </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Jumlah Temuan</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="bar"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="row" id="table-bordered">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-content">
+                  <!-- table bordered -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Nama Lengkap</th>
+                          <th>Department</th>
+                          <th>Jan</th>
+                          <th>Feb</th>
+                          <th>Jumlah</th>
+                          <th>Nilai MAR</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-bold-500">1</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">0</td>
+
+                          <td class="text-bold-500">0</td>
+                          <td>0</td>
+
+                          <td>
+                            <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">2</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">0</td>
+
+                          <td class="text-bold-500">0</td>
+                          <td>0</td>
+
+                          <td>
+                            <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">3</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">1</td>
+
+                          <td class="text-bold-500">0</td>
+                          <td>1</td>
+
+                          <td>
+                            <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">0</td>
+
+                          <td class="text-bold-500">0</td>
+                          <td>0</td>
+
+                          <td>
+                            <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bordered table end -->
 
         <footer>
           <div class="footer clearfix mb-0 text-muted">
@@ -149,6 +214,15 @@
     <script src="vendors/apexcharts/apexcharts.js"></script>
     <script src="dashboardjs/pages/dashboard.js"></script>
 
+    <script src="vendors/apexcharts/apexcharts.js"></script>
+
+    <script src="dashboardjs/ui-apexchart.js"></script>
+    <script src="vendors/chartjs/Chart.js"></script>
+
+    <script src=""></script>
+
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/js/pages/ui-chartjs.js"></script>
     <script src="dashboardjs/main.js"></script>
   </body>
 </html>

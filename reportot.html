@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHE Website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
+    <link rel="stylesheet" href="vendors/iconly/bold.css" />
+
+    <link rel="stylesheet" href="vendors/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+          <div class="sidebar-header">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a href="index.html"></a>
+              </div>
+              <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul class="menu">
+              <li class="sidebar-title">Menu</li>
+
+              <li class="sidebar-item">
+                <a href="dashboardadmin.html" class="sidebar-link">
+                  <i class="bi bi-grid-fill"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                  <span>Report</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="reportot.html">Orange tag</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="reportpatroli.html">Patroli</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Squba</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>Authentication</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="adminlgn.html">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+      </div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <h3>Report Orange Tag</h3>
+
+          <div class="btn-group mb-1">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle me-1" type="button" id="maxRows" name="state" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Show All</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">5</a>
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">15</a>
+                <a class="dropdown-item" href="#">20</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="row" id="table-bordered">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-content">
+                  <!-- table bordered -->
+                  <div class="table-responsive">
+                    <table id="mytable" class="table table-bordered mb-0">
+                      <thead>
+                        <tr>
+                          <th>Timestamp</th>
+                          <th>Nama Lengkap</th>
+                          <th>Department</th>
+                          <th>Tanggal</th>
+                          <th>Area Temuan</th>
+                          <th>Kategori Temuan</th>
+                          <th>Saran/Tindakan Perbaikan</th>
+                          <th width="80">Visual Temuan</th>
+                          <th>Deskripsi Temuan</th>
+                          <th>Status Temuan</th>
+                          <th>PIC</th>
+                          <th>Bulan</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 1</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/1.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 2</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/2.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 3</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/3.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 4</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/4.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/5.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/7.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/6.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/8.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/7.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/1.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">01/07/2021 8:19:16</td>
+                          <td class="text-bold-500">Bot 1</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">01/07/2021</td>
+
+                          <td class="text-bold-500">inbound WH RMPM</td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">di lakukan pemasangan penutup kotak sambung</td>
+                          <td><img src="img/faces/1.jpg" width="80" /></td>
+                          <td>Penutup kotak sambung tdk terpasang</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>EM</td>
+                          <td>Jul</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-primary justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bordered table end -->
+
+        <footer>
+          <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+              <p>2022 &copy; SHE Website</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      var table = "#mytable";
+      $("#maxRows").on("change", function () {
+        $(".pagination pagination-primary justify-content-end").html('');
+        var trnum = 0;
+        var maxRows = parseInt($(this).val());
+        var totalRows = $(table + "tbody tr").length;
+        $(table + " tr:gt(0)").each(function () {
+          trnum++;
+          if (trnum > maxRows) {
+            $(this).hide();
+          }
+          if (trnum <= maxRows) {
+            $(this).show();
+          }
+        });
+        if (totalRows > maxRows) {
+          var pagenum = Math.ceil(totalRows / maxRows);
+          for (var i = 1; i <= pagenum; ) {
+            $(".pagination pagination-primary justify-content-end")
+              .append('li data-page"' + i + '">\<span>' + i++ + '<span class="sr-only">(current)</span></span>\</li>')
+              .show();
+          }
+        }
+        $(".pagination pagination-primary justify-content-end li:first-child").addClass("active");
+        $("pagination pagination-primary justify-content-end li").on("click", function () {
+          var pagenum = $(this).attr("data-page");
+          var trIndex = 0;
+          $('.pagination pagination-primary justify-content-end li').removeClass('active')
+          $(this).addClass('active')
+          $(table+' tr:gt(0)').each(function(){
+            trIndex++
+            if(trIndex > (maxRows*pageNum) || trIndex <= ((maxRows*pageNum))-maxRows)){
+              $(this).hide()
+            } else{
+              $(this).show()
+            }
+          })
+        })
+      })
+      $(function(){
+        $('table tr:eq(0)').prepend('<th>ID</th>')
+        var id = 0;
+        $('table tr:gt(0)').each(function(){
+          id++
+          $(this).prepend('<td>'+id+'/id')
+        })
+      })
+    </script>
+    <script src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="dashboardjs/bootstrap.bundle.min.js"></script>
+
+    <script src="vendors/apexcharts/apexcharts.js"></script>
+    <script src="dashboardjs/pages/dashboard.js"></script>
+
+    <script src="dashboardjs/main.js"></script>
+  </body>
+</html>

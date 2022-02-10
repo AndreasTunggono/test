@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHE Website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
+    <link rel="stylesheet" href="vendors/iconly/bold.css" />
+    <link rel="stylesheet" href="vendors/simple-datatables/style.css" />
+
+    <link rel="stylesheet" href="vendors/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+          <div class="sidebar-header">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a href="index.html"></a>
+              </div>
+              <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul class="menu">
+              <li class="sidebar-title">Menu</li>
+
+              <li class="sidebar-item">
+                <a href="dashboardadmin.html" class="sidebar-link">
+                  <i class="bi bi-grid-fill"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                  <span>Report</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="reportot.html">Orange tag</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="reportpatroli.html">Patroli</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="#">Squba</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>Authentication</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="adminlgn.html">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+      </div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <h3>Report Patroli</h3>
+        </div>
+
+        <section class="section">
+          <div class="row" id="table-bordered">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-content">
+                  <!-- table bordered -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Nama Personil 1</th>
+                          <th>Nama Personil 2</th>
+                          <th>Department yang dipatroli</th>
+                          <th>Upload Temuan</th>
+                          <th>Kategori Temuan</th>
+                          <th>Deskripsi Temuan</th>
+                          <th>PIC</th>
+                          <th>Status</th>
+                          <th>Evidence</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-bold-500">1</td>
+                          <td class="text-bold-500">Bot 1</td>
+                          <td class="text-bold-500">Bot 2</td>
+                          <td class="text-bold-500">PREP INT</td>
+
+                          <td class="text-bold-500"><img src="img/faces/2.jpg" width="80" /></td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">Kabel Ngejuntai</td>
+                          <td>Friska</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">2</td>
+                          <td class="text-bold-500">Bot 3</td>
+                          <td class="text-bold-500">Bot 4</td>
+                          <td class="text-bold-500">PREP INT</td>
+
+                          <td class="text-bold-500"><img src="img/faces/1.jpg" width="80" /></td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">Kabel Ngejuntai</td>
+                          <td>Friska</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">3</td>
+                          <td class="text-bold-500">Bot 5</td>
+                          <td class="text-bold-500">Bot 6</td>
+                          <td class="text-bold-500">PREP INT</td>
+
+                          <td class="text-bold-500"><img src="img/faces/5.jpg" width="80" /></td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">Kabel Ngejuntai</td>
+                          <td>Friska</td>
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                          <td>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">Bot 7</td>
+                          <td class="text-bold-500">Bot 8</td>
+                          <td class="text-bold-500">PRD</td>
+
+                          <td class="text-bold-500"><img src="img/faces/6.jpg" width="80" /></td>
+                          <td>Unsafe Action</td>
+                          <td class="text-bold-500">Kabel Ngejuntai</td>
+                          <td>Friska</td>
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                          <td>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bordered table end -->
+
+        <section class="section">
+          <div class="row" id="table-bordered">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-content">
+                  <!-- table bordered -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                      <thead>
+                        <tr>
+                          <th>Dept</th>
+                          <th>Temuan</th>
+                          <th>Follow Up (Closed)</th>
+                          <th>ER %</th>
+                          <th>Target</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-bold-500">PRD</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">PREP INT</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">QA PLANT</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">GA PLANT</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">IRER</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">GVN</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">GA KN</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">EM</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">LAB ANALISA</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">100%</td>
+                          <td class="text-bold-500">90%</td>
+                        </tr>
+                        <tr>
+                          <th colspan="3">Total Avg %</th>
+                          <th class="text-bold-500"></th>
+                          <th class="text-bold-500"></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bordered table end -->
+
+        <footer>
+          <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+              <p>2022 &copy; SHE Website</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="dashboardjs/bootstrap.bundle.min.js"></script>
+    <script src="vendors/simple-datatables/simple-datatables.js"></script>
+
+    <script src="vendors/apexcharts/apexcharts.js"></script>
+    <script src="dashboardjs/pages/dashboard.js"></script>
+
+    <script src="dashboardjs/main.js"></script>
+  </body>
+</html>

@@ -2,45 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/1ea64687d0.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
     <title>SHE Website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
+
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    </style>
   </head>
+
   <body>
     <div id="particles-js"></div>
-    <div class="container">
-      <div class="img">
-        <img src="img/konten.png" />
-      </div>
+    <div id="auth">
+      <div class="row h-100">
+        <div class="col-lg-6 col-12">
+          <div id="auth-left">
+            <div class="auth-logo">
+              <img src="img/logoshe.png" />
+            </div>
+            <h1>Welcome</h1>
+            <p class="auth-subtitle mb-5">"Dimulai dari diri sendiri. Bersama kita membangun perilaku aman untuk menjaga Safety & Quality di area kerja."</p>
 
-      <div class="login-content">
-        <form action="index.html">
-          <img src="img/logoshe.png" />
-          <h2 class="title">Welcome</h2>
-          <div class="input-div one focus">
-            <div class="i">
-              <i class="fas fa-user"></i>
-            </div>
-            <div class="div">
-              <h5>Username</h5>
-              <input type="text" class="input" />
-            </div>
+            <form action="dashboardsquba.html">
+              <div class="form-group position-relative has-icon-left mb-4">
+                <input type="text" class="form-control form-control-xl" placeholder="Username" />
+              </div>
+              <div class="form-group position-relative has-icon-left mb-4">
+                <input type="password" class="form-control form-control-xl" placeholder="Password" />
+              </div>
+              <div class="form-group position-relative has-icon-left mb-4">
+                <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Login</button>
+                <div class="text-center mt-5 text-lg fs-4">
+                  <a class="font-bold" href="adminlgn.html">Login as Admin</a>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="input-div focus">
-            <div class="i">
-              <i class="fas fa-lock"></i>
-            </div>
-            <div class="div">
-              <h5>Password</h5>
-              <input type="password" class="input" />
-            </div>
-          </div>
-          <a class="btn" type="submit" href="dashboardsquba.html"> Login</a>
-        </form>
+        </div>
       </div>
     </div>
 
@@ -75,5 +79,3 @@
     </script>
   </body>
 </html>
-
-<!-- // HALAMAN LOGIN -->

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHE Website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="icon" type="image/x-icon" href="img/logoshe.png" />
+    <link rel="stylesheet" href="vendors/iconly/bold.css" />
+
+    <link rel="stylesheet" href="assets/vendors/apexcharts/apexcharts.css" />
+
+    <link rel="stylesheet" href="vendors/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="vendors/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="sidebar" class="active">
+        <div class="sidebar-wrapper active">
+          <div class="sidebar-header">
+            <div class="d-flex justify-content-between">
+              <div class="logo">
+                <a href="index.html"><img src="img/logoshe.png" alt="Logo" srcset="" /></a>
+              </div>
+              <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <ul class="menu">
+              <li class="sidebar-title">Menu</li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-grid-fill"></i>
+                  <span>Dashboard</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="orangetag.html">Orange Tag</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-stack"></i>
+                  <span>Components</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="dashboardsquba.html">Form Squba</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="dashboardpatroli.html">Form Patroli K3L</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="dashnoardorangetag.html">Form Orange Tag </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item">
+                <a href="laporan.html" class="sidebar-link">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                  <span>Laporan</span>
+                </a>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-stack"></i>
+                  <span>Form Improvement</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="oplshe.html">OPL SHE</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a href="opli2c.html">OPL i2C</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="sidebar-item has-sub">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>Authentication</span>
+                </a>
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a href="index.html">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+      </div>
+      <div id="main">
+        <header class="mb-3">
+          <a href="#" class="burger-btn d-block d-xl-none">
+            <i class="bi bi-justify fs-3"></i>
+          </a>
+        </header>
+
+        <div class="page-heading">
+          <h3>Dashboard Orange Tag</h3>
+        </div>
+
+        <section class="section">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Total status follow up temuan</h4>
+                </div>
+                <div class="card-body">
+                  <div id="radialGradient"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Jumlah Temuan</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="bar"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+            <div class="row" id="table-bordered">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-content">
+                    <!-- table bordered -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered mb-0">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Department</th>
+                            <th>Kategori Temuan</th>
+                            <th>Deskripsi Temuan</th>
+                            <th>Area Temuan</th>
+                            <th>Status</sth>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-bold-500">1</td>
+                            <td class="text-bold-500">Michael Right</td>
+                            <td class="text-bold-500">WH FG</td>
+                            <td class="text-bold-500">Unsafe Condition</td>
+  
+                            <td class="text-bold-500">...</td>
+                            <td>OFFICE PLANT 1</td>
+  
+                            <td>
+                              <span class="badge bg-danger">Open</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-bold-500">2</td>
+                            <td class="text-bold-500">Michael Right</td>
+                            <td class="text-bold-500">WH FG</td>
+                            <td class="text-bold-500">Unsafe Action</td>
+  
+                            <td class="text-bold-500">...</td>
+                            <td>OFFICE PLANT 1</td>
+  
+                            <td>
+                              <span class="badge bg-danger">Open</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-bold-500">3</td>
+                            <td class="text-bold-500">Michael Right</td>
+                            <td class="text-bold-500">WH FG</td>
+                            <td class="text-bold-500">Unsafe Condition</td>
+  
+                            <td class="text-bold-500">...</td>
+                            <td>OFFICE PLANT 1</td>
+  
+                            <td>
+                              <span class="badge bg-success">Closed</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-bold-500">4</td>
+                            <td class="text-bold-500">Michael Right</td>
+                            <td class="text-bold-500">WH RMPM</td>
+                            <td class="text-bold-500">Unsafe Condition</td>
+  
+                            <td class="text-bold-500">...</td>
+                            <td>OFFICE PLANT 1</td>
+  
+                            <td>
+                              <span class="badge bg-danger">Open</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-bold-500">5</td>
+                            <td class="text-bold-500">Michael Right</td>
+                            <td class="text-bold-500">WH RMPM</td>
+                            <td class="text-bold-500">Unsafe Condition</td>
+  
+                            <td class="text-bold-500">...</td>
+                            <td>OFFICE PLANT 1</td>
+  
+                            <td>
+                              <span class="badge bg-danger">Open</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Bordered table end -->
+
+        <footer>
+          <div class="footer clearfix mb-0 text-muted">
+            <div class="float-start">
+              <p>2022 &copy; SHE Website</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/dayjs/dayjs.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/ui-apexchart.js"></script>
+
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendors/chartjs/Chart.js"></script>
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/js/pages/ui-chartjs.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

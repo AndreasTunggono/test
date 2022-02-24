@@ -88,7 +88,7 @@
         </header>
 
         <div class="page-heading">
-          <h3>Dashboard</h3>
+          <h3>Follow Up KN</h3>
         </div>
 
         <section class="section">
@@ -115,6 +115,116 @@
             </div>
           </div>
         </section>
+
+        <section class="section">
+          <div class="row" id="table-bordered">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-content">
+                  <!-- table bordered -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Nama Lengkap</th>
+                          <th>Department</th>
+                          <th>Kategori Temuan</th>
+                          <th>Deskripsi Temuan</th>
+                          <th>Area Temuan</th>
+                          <th>Status</sth>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-bold-500">1</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">Unsafe Condition</td>
+
+                          <td class="text-bold-500">...</td>
+                          <td>OFFICE PLANT 1</td>
+
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">2</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">Unsafe Action</td>
+
+                          <td class="text-bold-500">...</td>
+                          <td>OFFICE PLANT 1</td>
+
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">3</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH FG</td>
+                          <td class="text-bold-500">Unsafe Condition</td>
+
+                          <td class="text-bold-500">...</td>
+                          <td>OFFICE PLANT 1</td>
+
+                          <td>
+                            <span class="badge bg-success">Closed</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">4</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">Unsafe Condition</td>
+
+                          <td class="text-bold-500">...</td>
+                          <td>OFFICE PLANT 1</td>
+
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-bold-500">5</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">Unsafe Condition</td>
+
+                          <td class="text-bold-500">...</td>
+                          <td>OFFICE PLANT 1</td>
+
+                          <td>
+                            <span class="badge bg-danger">Open</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bordered table end -->
+
+        <div class="page-heading">
+          <h3>Achievement KN</h3>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h4>Jumlah Temuan (posisi 10 besar)</h4>
+            </div>
+            <div class="card-body">
+              <div id="line"></div>
+            </div>
+          </div>
+        </div>
 
         <section class="section">
           <div class="row" id="table-bordered">
@@ -188,6 +298,19 @@
                             <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
                           </td>
                         </tr>
+                        <tr>
+                          <td class="text-bold-500">5</td>
+                          <td class="text-bold-500">Michael Right</td>
+                          <td class="text-bold-500">WH RMPM</td>
+                          <td class="text-bold-500">0</td>
+
+                          <td class="text-bold-500">0</td>
+                          <td>0</td>
+
+                          <td>
+                            <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                          </td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -207,22 +330,18 @@
         </footer>
       </div>
     </div>
-    <script src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="dashboardjs/bootstrap.bundle.min.js"></script>
-    <script src="vendors/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-    <script src="vendors/apexcharts/apexcharts.js"></script>
-    <script src="dashboardjs/pages/dashboard.js"></script>
+    <script src="assets/vendors/dayjs/dayjs.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/ui-apexchart.js"></script>
 
-    <script src="vendors/apexcharts/apexcharts.js"></script>
-
-    <script src="dashboardjs/ui-apexchart.js"></script>
-    <script src="vendors/chartjs/Chart.js"></script>
-
-    <script src=""></script>
-
+    <script src="assets/vendors/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendors/chartjs/Chart.js"></script>
     <script src="assets/vendors/chartjs/Chart.min.js"></script>
     <script src="assets/js/pages/ui-chartjs.js"></script>
-    <script src="dashboardjs/main.js"></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

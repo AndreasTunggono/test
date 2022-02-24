@@ -288,12 +288,12 @@ var ctxBar = document.getElementById("bar").getContext("2d");
 var myBar = new Chart(ctxBar, {
   type: "bar",
   data: {
-    labels: ["Unsafe Condition", "Unsafe Action", "Covid-19 issue", "Nearmiss"],
+    labels: ["Unsafe Condition", "Unsafe Action", "Covid-19 issue", "Nearmiss", "Quality"],
     datasets: [
       {
         label: "Jumlah Temuan",
-        backgroundColor: [chartColors.yellow, chartColors.yellow, chartColors.yellow, chartColors.yellow, chartColors.info, chartColors.blue, chartColors.grey],
-        data: [5, 10, 30, 40, 35, 55, 15],
+        backgroundColor: [chartColors.yellow, chartColors.yellow, chartColors.yellow, chartColors.yellow, chartColors.yellow, chartColors.blue, chartColors.grey],
+        data: [10, 10, 30, 40, 2],
       },
     ],
   },
@@ -331,6 +331,7 @@ var myBar = new Chart(ctxBar, {
     },
   },
 });
+
 var line = document.getElementById("line").getContext("2d");
 var gradient = line.createLinearGradient(0, 0, 0, 400);
 gradient.addColorStop(0, "rgba(50, 69, 209,1)");

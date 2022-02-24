@@ -4,12 +4,12 @@ var lineOptions = {
   },
   series: [
     {
-      name: "sales",
-      data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+      name: "Jumlah",
+      data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 50],
     },
   ],
   xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+    categories: ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", "Test9", "Test10"],
   },
 };
 var candleOptions = {
